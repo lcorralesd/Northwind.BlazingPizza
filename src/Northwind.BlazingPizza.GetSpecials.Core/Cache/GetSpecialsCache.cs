@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-
-namespace Northwind.BlazingPizza.GetSpecials.Core.Cache;
+﻿namespace Northwind.BlazingPizza.GetSpecials.Core.Cache;
 internal class GetSpecialsCache(IDistributedCache cache,
     ILogger<GetSpecialsCache> logger) : IGetSpecialsCache
 {

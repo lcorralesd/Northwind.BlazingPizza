@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.BlazingPizza.Razo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.BlazingPizza.Proxies", "src\Northwind.BlazingPizza.Proxies\Northwind.BlazingPizza.Proxies.csproj", "{E8B65384-BD23-4170-8292-11758A393F6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.BlazingPizza.WebAppClient", "src\Northwind.BlazingPizza.WebAppClient\Northwind.BlazingPizza.WebAppClient.csproj", "{6FD961A8-8725-448C-BFE0-3F890B810850}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.BlazingPizza.WebAppClient", "src\Northwind.BlazingPizza.WebAppClient\Northwind.BlazingPizza.WebAppClient.csproj", "{6FD961A8-8725-448C-BFE0-3F890B810850}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.BlazingPizza.ViewModels", "src\Northwind.BlazingPizza.ViewModels\Northwind.BlazingPizza.ViewModels.csproj", "{9CCA846A-1ADE-4C62-A7C7-A5A4935E2A54}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8A8E3926-1024-4B15-B45F-8472EF0E5AEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{9CCA846A-1ADE-4C62-A7C7-A5A4935E2A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CCA846A-1ADE-4C62-A7C7-A5A4935E2A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CCA846A-1ADE-4C62-A7C7-A5A4935E2A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8E3926-1024-4B15-B45F-8472EF0E5AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8E3926-1024-4B15-B45F-8472EF0E5AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8E3926-1024-4B15-B45F-8472EF0E5AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8E3926-1024-4B15-B45F-8472EF0E5AEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

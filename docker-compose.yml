@@ -1,0 +1,17 @@
+services:
+  northwind.blazingpizza.webappclient:
+    image: ${DOCKER_REGISTRY-}northwindblazingpizzawebappclient
+    build:
+      context: .
+      dockerfile: src/Northwind.BlazingPizza.WebAppClient/Dockerfile
+
+  northwind.blazingpizza.getspecials.webapi:
+    image: ${DOCKER_REGISTRY-}northwindblazingpizzagetspecialswebapi
+    build:
+      context: .
+      dockerfile: src/Northwind.BlazingPizza.GetSpecials.WebApi/Dockerfile
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"

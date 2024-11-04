@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "northwind.blazingpizza.webappclient": "StartDebugging",
+        "northwind.blazingpizza.getspecials.webapi": "StartDebugging"
+      }
+    }
+  }
+}

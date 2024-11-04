@@ -25,7 +25,12 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddDistributedMemoryCache();
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = "redis:6379";
+    options.InstanceName = "GetSpecials";
+});
+
 
 
 var app = builder.Build();
