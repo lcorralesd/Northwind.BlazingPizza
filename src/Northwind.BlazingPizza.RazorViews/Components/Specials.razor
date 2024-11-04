@@ -1,0 +1,37 @@
+﻿<div class="main">
+    @if (GetSpecialsViewModel == null)
+    {
+        <p>
+            <em>
+                @Messages.LoadingSpecialsMessage
+            </em>
+        </p>
+
+    }
+    else if(GetSpecialsViewModel.Specials == null || GetSpecialsViewModel.Specials.Count() == 0)
+    {
+        <p>
+            <em>
+                @Messages.LoadingErrorMessage
+            </em>
+        </p>
+    }
+    else
+    {
+        <ul class="pizza-cards">
+            @foreach(var special in GetSpecialsViewModel.Specials)
+            {
+                <li style="background-image: url('@special.ImageUrl')">
+                    <div class="pizza-info">
+                        <span class="title">@special.Name</span>
+                        @special.Description
+                        <span class="price">@special.GetFormattedBasePrice()</span>
+                    </div>
+
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+
